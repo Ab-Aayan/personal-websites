@@ -7,6 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="assets/css/main.css" />
+
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css">
     </noscript>
@@ -20,6 +21,91 @@
 </head>
 
 <body class="is-preload">
+    <!-- Animated Resume Widget with Advanced Effects -->
+    <div class="resume-widget">
+        <div class="resume-trigger">
+            <div class="icon-wrapper">
+                <i class="fas fa-file-alt"></i>
+                <div class="pulse-effect"></div>
+            </div>
+            <span>My Resume</span>
+            <div class="hover-effect"></div>
+            <div class="ripple-effect"></div>
+        </div>
+
+        <div class="resume-dropdown">
+            <div class="dropdown-arrow"></div>
+            <a href="./assets/pdf/abdul-hanan-resume.pdf" download class="resume-option">
+                <div class="option-content">
+                    <div class="option-icon bg-purple">
+                        <i class="fas fa-download"></i>
+                    </div>
+                    <div class="option-text">
+                        <h4>Download PDF</h4>
+                        <p>Full version with all details</p>
+                    </div>
+                </div>
+                <div class="option-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="option-hover-bg"></div>
+            </a>
+
+            <a href="#view-resume" class="resume-option view-resume-btn">
+                <div class="option-content">
+                    <div class="option-icon bg-blue">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="option-text">
+                        <h4>Quick View</h4>
+                        <p>Preview in browser</p>
+                    </div>
+                </div>
+                <div class="option-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="option-hover-bg"></div>
+            </a>
+
+            <a href="#print-resume" class="resume-option">
+                <div class="option-content">
+                    <div class="option-icon bg-orange">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <div class="option-text">
+                        <h4>Print Version</h4>
+                        <p>Printer-friendly format</p>
+                    </div>
+                </div>
+                <div class="option-arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="option-hover-bg"></div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Resume Preview Modal -->
+    <div class="resume-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-container">
+            <div class="modal-header">
+                <h3>Resume Preview</h3>
+                <div class="modal-actions">
+                    <a href="./assets/pdf/abdul-hanan-resume.pdf" download class="modal-download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </a>
+                    <button class="modal-close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-content">
+                <iframe src="./assets/pdf/abdul-hanan-resume.pdf" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+
     <!-- Wrapper -->
     <div id="wrapper">
         <!-- Header -->
@@ -29,7 +115,6 @@
                 <h4>Hello!</h4>
                 <h1 class=display-1>It's Me Aayan Khhan</h1>
                 <div class="Typist lead typist">Computer Engineer | Flutter Developer | Designer ツ</div> <br>
-                <!-- <button class="right-button">CV</button><br> <br> -->
 
                 <!-- Filter: https://css-tricks.com/gooey-effect/ -->
                 <svg style="visibility: hidden; position: absolute;" width="0" height="0"
@@ -77,15 +162,22 @@
                         <img src="images/project-logo/ab_profile.jpg" alt="Abdul Hanan Ansari"
                             style="width: 100%; height: auto; border-radius: 8px; transition: transform 0.5s ease-in-out;">
                     </div>
-
-                    <div style="flex: 1; padding-left: 32px; margin-top: 2rem;">
-                        <h2 class="per-title">Abdul Aayan</h2>
-                        <span class="spa-text">| Flutter Developer |</span>
+                    <div style="flex: 1; padding-left: 32px; margin-top: 2rem; text-align: left;">
+                        <h2 class="per-title" style="font-size: 2rem; color: #fff;">Abdul Aayan</h2>
+                        <span class="spa-text"
+                            style="display: inline-block; font-size: 1.2rem; color: #3498db; font-weight: bold; margin-top: 10px; margin-left: 14px;">|
+                            Flutter Developer |</span>
                     </div>
                 </div>
 
                 <div>
-                    <p style="text-align: justify;">Myself Abdul Aayan. I am basically from Janakpur but currently residing in Kathmandu. I have completed my diploma in Computer Engineering from Lumbini Engineering College. My hobbies are reading, writing, and traveling. I am also good at sports and other extracurricular activities. Sports have been an integral part of my life as they are important for physical and mental health. I also like to explore different historical places and interact with people of different religions and communities, enriching my knowledge about cultural and mental health.</p>
+                    <p style="text-align: justify;">Myself Abdul Aayan. I am basically from Janakpur but currently
+                        residing in Kathmandu. I have completed my diploma in Computer Engineering from Lumbini
+                        Engineering College. My hobbies are reading, writing, and traveling. I am also good at sports
+                        and other extracurricular activities. Sports have been an integral part of my life as they are
+                        important for physical and mental health. I also like to explore different historical places and
+                        interact with people of different religions and communities, enriching my knowledge about
+                        cultural and mental health.</p>
                 </div>
                 <h2 class="major">Education</h2>
                 <div style="margin: 50px;">
@@ -161,6 +253,7 @@
                                     Javascript
                                 </li>
                                 <li>PHP</li>
+                                <li>JavaScript</li>
                                 <li>C/C++</li>
                             </ul>
 
@@ -177,6 +270,8 @@
                             </div>
                             <ul>
                                 <li>Flutter</li>
+                                <li>Nodejs</li>
+                                <li>MongoDB</li>
                                 <li>Wordpress</li>
                                 <li>Google Firebase</li>
                                 <li>My-SQL</li>
@@ -201,6 +296,8 @@
                                     BootStrap</li>
                                 <li>
                                     Figma</li>
+                                <li>Cloudflare</li>
+                                <li>Postman</li>
                                 <li>
                                     Microsoft Office</li>
                                 <li>
@@ -216,268 +313,33 @@
                     </ul>
                 </div>
 
+                <!-- Hobbies Section -->
                 <h2 class="major">Hobbies</h2>
-                <div class="g2">
-                    <span class="label label-info">Designing</span>
-                    <span class="label label-info">Public speaking</span>
-                    <span class="label label-info">Reading</span>
-
-                    <span class="label label-info">Listing Music</span>
-                    <span class="label label-info">Traveling</span>
-                    <span class="label label-info">Cooking</span>
-                </div>
+                <div class="hobbies-container">
+                    <span class="hobby">Designing</span>
+                    <span class="hobby">Public Speaking</span>
+                    <span class="hobby">Reading</span>
+                    <span class="hobby">Listening to Music</span>
+                    <span class="hobby">Traveling</span>
+                    <span class="hobby">Cooking</span>
             </article>
 
             <!--- Projects --->
             <article id="project">
                 <h2 class="major">Projects</h2>
 
-                <div>
-                    <ul style="list-style: none; padding: 0; position: relative;">
+                <div class="projects-container">
+                    <div class="projects-grid">
+                        <!-- Projects will be dynamically inserted here -->
+                    </div>
 
-                        <div class="project-items">
-                            <div style="display: flex; align-items: center;">
-
-                                <!-- Add your image here -->
-                                <img src="/images/project-logo/ctevt_app_logo.png" alt="CTEVT: Notes and Solutions set"
-                                    style="border-radius: 50%; width: 50px; height: 50px; margin-right: 10px;">
-
-                                <h3
-                                    style="background-color: #615d2e87; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 10px; width: 80%;">
-                                    CTEVT: Notes and Solutions set
-                                </h3>
-
-                            </div>
-                            <li style="position: relative; padding-left: 20px; margin-bottom: 20px;">
-                                <div
-                                    style="position: absolute; left: -10px; top: 0; height: 100%; border-left: 2px solid #3498db;">
-                                </div>
-                                <ul>
-
-                                    <li>
-                                        <h5 style="margin: 0 0 0 0;">Used Language :- Dart, Java, Javascript</h5>
-                                    </li>
-                                    <li>
-                                        <p>This is an educational app that helps all CTEVT students. We will provide
-                                            notes, solutions, and much more.</p>
-                                    </li>
-                                    <a href="https://play.google.com/store/apps/details?id=com.appionic.ctevtNotes&hl=en&gl=US"
-                                        target="_blank">Click
-                                        Me</a>
-
-                                </ul>
-
-                            </li>
+                    <div class="pagination-controls">
+                        <button class="pagination-btn prev-btn" disabled>Previous</button>
+                        <div class="page-numbers">
+                            <!-- Page numbers will be dynamically inserted here -->
                         </div>
-                        <div class="project-items">
-                            <div style="display: flex; align-items: center;">
-
-                                <!-- Add your image here -->
-                                <img src="/images/project-logo/medsega_logo.png" alt="Medsega"
-                                    style="border-radius: 50%; width: 50px; height: 50px; margin-right: 10px;background-color: #fff;">
-
-                                <h3
-                                    style="background-color: #615d2e87; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 10px; width: 80%;">
-                                    Medsega
-                                </h3>
-
-                            </div>
-                            <li style="position: relative; padding-left: 20px; margin-bottom: 20px;">
-                                <div
-                                    style="position: absolute; left: -10px; top: 0; height: 100%; border-left: 2px solid #3498db;">
-                                </div>
-                                <ul>
-
-                                    <li>
-                                        <h5 style="margin: 0 0 0 0;">Used Language :- Dart, Java, Javascript</h5>
-                                    </li>
-                                    <li>
-                                        <p>MedSega is a comprehensive healthcare companion app developed as a part of
-                                            our 5th-semester project. This Flutter mobile application revolutionizes
-                                            healthcare by offering a wide range of features, including a chatbot, login
-                                            functionality, real-time doctor consultations, video calling, appointment
-                                            scheduling, and an admin panel for doctors. We've learned various skills and
-                                            technologies, including graphic design using Figma, while building this
-                                            project.</p>
-                                    </li>
-                                    <a href="https://github.com/Ab-Aayan/medsega" target="_blank">Click Me</a>
-
-                                </ul>
-
-                            </li>
-
-
-
-                        </div>
-                        <div class="project-items">
-                            <div style="display: flex; align-items: center;">
-
-                                <!-- Add your image here -->
-                                <img src="/images/project-logo/lunch_logo.jpg" alt="LanceMeUp"
-                                    style="border-radius: 50%; width: 50px; height: 50px; margin-right: 10px;background-color: #fff;">
-
-                                <h3
-                                    style="background-color: #615d2e87; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 10px; width: 80%;">
-                                    LanceMeUp
-                                </h3>
-
-                            </div>
-                            <li style="position: relative; padding-left: 20px; margin-bottom: 20px;">
-                                <div
-                                    style="position: absolute; left: -10px; top: 0; height: 100%; border-left: 2px solid #3498db;">
-                                </div>
-                                <ul>
-
-                                    <li>
-                                        <h5 style="margin: 0 0 0 0;">Used Language :- Dart, Java, Javascript</h5>
-                                    </li>
-                                    <li>
-                                        <p>LanceMeUp is your all-in-one solution for conducting online intern selection
-                                            and project collaboration. This Flutter mobile application streamlines the
-                                            intern selection process, offers essential project management tools,
-                                            provides email integration, and keeps you updated with notifications, all
-                                            while maintaining a clean and intuitive user interface.</p>
-                                    </li>
-                                    <a href="https://github.com/Ab-Aayan/LanceMeUp" target="_blank">Click Me</a>
-
-                                </ul>
-
-                            </li>
-                        </div>
-                        <div class="project-items">
-                            <div style="display: flex; align-items: center;">
-
-                                <!-- Add your image here -->
-                                <img src="/images/project-logo/nepali_driving_logo.png"
-                                    alt="Nepali Driving License Test"
-                                    style="border-radius: 50%; width: 50px; height: 50px; margin-right: 10px;background-color: #fff;">
-
-                                <h3
-                                    style="background-color: #615d2e87; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 10px; width: 80%;">
-                                    Nepali Driving License Test
-                                </h3>
-
-                            </div>
-                            <li style="position: relative; padding-left: 20px; margin-bottom: 20px;">
-                                <div
-                                    style="position: absolute; left: -10px; top: 0; height: 100%; border-left: 2px solid #3498db;">
-                                </div>
-                                <ul>
-
-                                    <li>
-                                        <h5 style="margin: 0 0 0 0;">Used Language :- Dart, Java, Javascript</h5>
-                                    </li>
-                                    <li>
-                                        <p>This apps will help you to learn how to pass driving license exam..</p>
-                                    </li>
-                                    <a href="https://play.google.com/store/apps/details?id=com.appionic.nepalDriving"
-                                        target="_blank">Click
-                                        Me</a>
-
-                                </ul>
-
-                            </li>
-                        </div>
-                        <div class="project-items">
-                            <div style="display: flex; align-items: center;">
-
-                                <!-- Add your image here -->
-                                <img src="/images/project-logo/travel_nepal_logo.png" alt="Travel Nepal"
-                                    style="border-radius: 50%; width: 50px; height: 50px; margin-right: 10px; background-color: #fff;">
-
-                                <h3
-                                    style="background-color: #615d2e87; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 10px; width: 80%;">
-                                    Travel Nepal
-                                </h3>
-
-                            </div>
-                            <li style="position: relative; padding-left: 20px; margin-bottom: 20px;">
-                                <div
-                                    style="position: absolute; left: -10px; top: 0; height: 100%; border-left: 2px solid #3498db;">
-                                </div>
-                                <ul>
-
-                                    <li>
-                                        <h5 style="margin: 0 0 0 0;">Used Language :- Dart, Java, Javascript</h5>
-                                    </li>
-                                    <li>
-                                        <p>The Travel Nepal App is your ultimate travel companion for exploring the
-                                            breathtaking beauty, diverse culture, and adventure-filled destinations of
-                                            Nepal. This Flutter mobile application is designed to make your journey
-                                            through Nepal seamless, informative, and memorable.</p>
-                                    </li>
-                                    <a href="https://github.com/Ab-Aayan/travel_nepal" target="_blank">Click Me</a>
-
-                                </ul>
-
-                            </li>
-                        </div>
-                        <div class="project-items">
-                            <div style="display: flex; align-items: center;">
-
-                                <!-- Add your image here -->
-                                <img src="/images/project-logo/medical_webs_logo.jpg" alt="Complex Hospital"
-                                    style="border-radius: 50%; width: 50px; height: 50px; margin-right: 10px; color: #fff;">
-
-                                <h3
-                                    style="background-color: #615d2e87; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 10px; width: 80%;">
-                                    Complex Hospital
-                                </h3>
-
-                            </div>
-                            <li style="position: relative; padding-left: 20px; margin-bottom: 20px;">
-                                <div
-                                    style="position: absolute; left: -10px; top: 0; height: 100%; border-left: 2px solid #3498db;">
-                                </div>
-                                <ul>
-
-                                    <li>
-                                        <h5 style="margin: 0 0 0 0;">Used Language :- HTML, CSS, Javascript</h5>
-                                    </li>
-                                    <li>
-                                        <p>This is Hospital Websites. Websites Under Construction
-                                        </p>
-                                    </li>
-                                    <a target="_blank" href="https://ab-aayan.github.io/Complex-Hospital/">Click Me</a>
-
-                                </ul>
-
-                            </li>
-                        </div>
-                        <div class="project-items">
-                            <div style="display: flex; align-items: center;">
-
-                                <!-- Add your image here -->
-                                <img src="/images/project-logo/oldpro.png" alt="Complex Hospital"
-                                    style="border-radius: 50%; width: 50px; height: 50px; margin-right: 10px; color: #fff;">
-
-                                <h3
-                                    style="background-color: #615d2e87; color: #fff; padding: 10px; border-radius: 5px; margin-bottom: 10px; width: 80%;">
-                                    Old Portfolio Websites
-                                </h3>
-
-                            </div>
-                            <li style="position: relative; padding-left: 20px; margin-bottom: 20px;">
-                                <div
-                                    style="position: absolute; left: -10px; top: 0; height: 100%; border-left: 2px solid #3498db;">
-                                </div>
-                                <ul>
-
-                                    <li>
-                                        <h5 style="margin: 0 0 0 0;">Used Language :- HTML, CSS, Javascript</h5>
-                                    </li>
-                                    <li>
-                                        <p>This is Hospital Websites. Websites Under Construction
-                                        </p>
-                                    </li>
-                                    <a href="https://abdulhananansari.com.np/old/" target="_blank">Click Me</a>
-
-                                </ul>
-
-                            </li>
-                        </div>
-
-                    </ul>
+                        <button class="pagination-btn next-btn">Next</button>
+                    </div>
                 </div>
             </article>
 
@@ -513,6 +375,7 @@
 
         </div>
         <!-- If you can add any any floating contect item then add here -->
+
 
     </div>
 
@@ -557,6 +420,224 @@
                 }
             });
         });
+    </script>
+
+    <script>
+        // Enhanced JavaScript with Ripple Effect
+        document.querySelector('.resume-trigger').addEventListener('click', function (e) {
+            // Create ripple effect
+            const ripple = this.querySelector('.ripple-effect');
+            ripple.style.transition = 'none';
+            ripple.style.left = (e.pageX - this.getBoundingClientRect().left - ripple.offsetWidth / 2) + 'px';
+            ripple.style.top = (e.pageY - this.getBoundingClientRect().top - ripple.offsetHeight / 2) + 'px';
+            ripple.style.opacity = '1';
+            ripple.style.transform = 'scale(0)';
+
+            setTimeout(() => {
+                ripple.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                ripple.style.transform = 'scale(10)';
+                ripple.style.opacity = '0';
+            }, 10);
+        });
+
+        // Toggle Resume Modal
+        document.querySelector('.view-resume-btn').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('.resume-modal').classList.add('active');
+
+            // Reset loading animation
+            const loadingBar = document.querySelector('.loading-progress');
+            loadingBar.style.animation = 'none';
+            setTimeout(() => {
+                loadingBar.style.animation = 'loading 1.5s infinite';
+            }, 10);
+        });
+
+        // Close Modal
+        document.querySelector('.modal-close-btn').addEventListener('click', function () {
+            document.querySelector('.resume-modal').classList.remove('active');
+        });
+
+        document.querySelector('.modal-overlay').addEventListener('click', function () {
+            document.querySelector('.resume-modal').classList.remove('active');
+        });
+
+        // Close when pressing Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                document.querySelector('.resume-modal').classList.remove('active');
+            }
+        });
+    </script>
+
+    <script>
+        // Project data - you can expand this with all your projects
+        const projects = [
+            {
+                id: 1,
+                title: "E-Tutor Class - Nepal's First Open Online Tutoring Platform",
+                logo: "/images/project-logo/etutor.webp",
+                tech: "Dart, Java, Kotlin, API, Payment-Integration, Video Calling SDK",
+                description: "eTutorclass is Nepal’s First open online tutoring class system that connects teachers, students, institutions, schools, and colleges on a single platform. It enhances learning quality and access through technology integration, offering affordable education and increasing teachers' income by utilizing their free time.",
+                link: "https://play.google.com/store/apps/details?id=com.etutorclass&hl=en"
+            }
+            ,
+            {
+                id: 2,
+                title: "CTEVT: Notes and Solutions set",
+                logo: "/images/project-logo/ctevt_app_logo.png",
+                tech: "Dart, Java, Javascript, API",
+                description: "This is an educational app that helps all CTEVT students. We provide notes, solutions, and much more.",
+                link: "https://play.google.com/store/apps/details?id=com.appionic.ctevtNotes&hl=en&gl=US"
+            },
+            {
+                id: 3,
+                title: "Medsega",
+                logo: "/images/project-logo/medsega_logo.png",
+                tech: "Dart, Java, Javascript, Video Calling SDK",
+                description: "Comprehensive healthcare companion app with real-time doctor consultations, video calling, and appointment scheduling.",
+                link: "https://github.com/Ab-Aayan/medsega"
+            },
+            {
+                id: 4,
+                title: "LanceMeUp",
+                logo: "/images/project-logo/lunch_logo.jpg",
+                tech: "Dart, Java, JavaScript, YouTube SDK",
+                description: "All-in-one solution for conducting online intern selection and project collaboration.",
+                link: "https://github.com/Ab-Aayan/LanceMeUp"
+            },
+            {
+                id: 5,
+                title: "Nepali Driving License Test",
+                logo: "/images/project-logo/nepali_driving_logo.png",
+                tech: "Dart, Java, Javascript",
+                description: "Helps users learn how to pass the driving license exam.",
+                link: "https://play.google.com/store/apps/details?id=com.appionic.nepalDriving"
+            },
+            {
+                id: 6,
+                title: "Travel Nepal",
+                logo: "/images/project-logo/travel_nepal_logo.png",
+                tech: "Dart, Java, Javascript,",
+                description: "Travel companion app for exploring Nepal's beauty and culture.",
+                link: "https://github.com/Ab-Aayan/travel_nepal"
+            },
+            {
+                id: 7,
+                title: "Complex Hospital",
+                logo: "/images/project-logo/medical_webs_logo.jpg",
+                tech: "HTML, CSS, Javascript",
+                description: "Hospital website currently under construction.",
+                link: "https://ab-aayan.github.io/Complex-Hospital/"
+            },
+            {
+                id: 8,
+                title: "Snake Game 🐍",
+                logo: "/images/project-logo/games.png",
+                tech: "JavaScript, HTML, CSS",
+                description: "A modern, fun, and feature-rich Snake Game built with a sleek UI and real-time ranking system. Play and compete with others to climb the leaderboard! 🎮",
+                link: "https://ab-aayan.github.io/snake-games/"
+            },
+
+            {
+                id: 9,
+                title: "Old Portfolio Websites",
+                logo: "/images/project-logo/oldpro.png",
+                tech: "HTML, CSS, Javascript",
+                description: "My previous portfolio website design.",
+                link: "https://abdulhananansari.com.np/old/"
+            }
+            // Add more projects as needed
+        ];
+
+        // Pagination variables
+        const projectsPerPage = 3;
+        let currentPage = 1;
+
+        // DOM elements
+        const projectsGrid = document.querySelector('.projects-grid');
+        const pageNumbersContainer = document.querySelector('.page-numbers');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+
+        // Initialize the projects display
+        function displayProjects() {
+            // Clear current projects
+            projectsGrid.innerHTML = '';
+
+            // Calculate start and end index
+            const startIndex = (currentPage - 1) * projectsPerPage;
+            const endIndex = startIndex + projectsPerPage;
+            const paginatedProjects = projects.slice(startIndex, endIndex);
+
+            // Create project cards
+            paginatedProjects.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project-card';
+                projectCard.innerHTML = `
+                <div class="project-header">
+                    <img src="${project.logo}" alt="${project.title}" class="project-logo">
+                    <h3 class="project-title">${project.title}</h3>
+                </div>
+                <div class="project-body">
+                    <p class="project-tech">Used Language: ${project.tech}</p>
+                    <p class="project-description">${project.description}</p>
+                    <a href="${project.link}" target="_blank" class="project-link">View Project</a>
+                </div>
+                `;
+                projectsGrid.appendChild(projectCard);
+            });
+
+            // Update pagination buttons
+            updatePaginationControls();
+        }
+
+        // Update pagination controls
+        function updatePaginationControls() {
+            // Update previous button
+            prevBtn.disabled = currentPage === 1;
+
+            // Update next button
+            nextBtn.disabled = currentPage === Math.ceil(projects.length / projectsPerPage);
+
+            // Update page numbers
+            updatePageNumbers();
+        }
+
+        // Update page numbers
+        function updatePageNumbers() {
+            pageNumbersContainer.innerHTML = '';
+            const totalPages = Math.ceil(projects.length / projectsPerPage);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const pageNumber = document.createElement('div');
+                pageNumber.className = `page-number ${i === currentPage ? 'active' : ''}`;
+                pageNumber.textContent = i;
+                pageNumber.addEventListener('click', () => {
+                    currentPage = i;
+                    displayProjects();
+                });
+                pageNumbersContainer.appendChild(pageNumber);
+            }
+        }
+
+        // Event listeners for pagination buttons
+        prevBtn.addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                displayProjects();
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPage < Math.ceil(projects.length / projectsPerPage)) {
+                currentPage++;
+                displayProjects();
+            }
+        });
+
+        // Initialize the display
+        displayProjects();
     </script>
 
 </body>
